@@ -2,8 +2,47 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="8dp"
-    
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txtTite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constrainStart_toStartOf="parent"
+            app:layout_constrainTop_toTopOf="parent"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/txtBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Text"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constrainStart_toStartOf="parent"
+            app:layout_constrainTop_toBottomOf="@id/txtTite"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+
+
 
 </com.google.android.material.card.MaterialCardView>
